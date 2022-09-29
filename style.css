@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --page-background-color: #ffffff;
+  --button-background-color: #e1e1e6;
+  --blue-for-button: #02799d;
+  --base-color: #323238;
+  --font-family-for-page: "Roboto", sans-serif;
+  --font-color: #323238;
+  --input-range: #323238;
+}
+body.dark {
+  --font-color: white;
+  --button-background-color: #29292e;
+  --blue-for-button: #0a3442;
+  --page-background-color: #121214;
+  --base-color: #c4c4cc;
+  --input-range: white;
+}
+
+body {
+  background-color: var(--page-background-color);
+}
+
+.weather-buttons .change-colors {
+  background-color: var(--blue-for-button);
+}
+
+.weather-buttons .change-colors path {
+  fill: white;
+}
+
+.page {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  width: 32.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.numbers {
+  display: flex;
+  font-family: var(--font-family-for-page);
+  font-size: 12.6rem;
+  color: var(--font-color);
+  width: fit-content;
+}
+
+.buttons {
+  display: flex;
+  padding: 0;
+  gap: 4rem;
+}
+
+.sounds-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32rem;
+  padding: 48rem 42rem;
+  border: none;
+  border-radius: 24rem;
+  cursor: pointer;
+}
+
+.buttons button {
+  background-color: transparent;
+  border: none;
+
+  cursor: pointer;
+}
+
+.weather-buttons {
+  display: grid;
+  grid-template-areas:
+    "A B"
+    "C D";
+  grid-gap: 3.2rem;
+}
+
+.weather-buttons > button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--button-background-color);
+  width: 9.8rem;
+  height: 11.2rem;
+  border-radius: 2.4rem;
+}
+
+.btn-top {
+  padding: 0;
+  display: block;
+  position: fixed;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  top: 0;
+  margin-top: 6rem;
+  right: 6rem;
+}
+
+.btn-top-black-mode {
+  padding: 0;
+  display: block;
+  position: fixed;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  top: 0;
+  margin-top: 6rem;
+  right: 6rem;
+}
+
+.hide {
+  display: none;
+}
+
+input[type="range"] {
+  margin-top: 2rem;
+  max-width: 9rem;
+  -webkit-appearance: none;
+  background-color: transparent;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: var(--input-range);
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid var(--input-range);
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background: var(--input-range);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: var(--input-range);
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: var(--input-range);
+  border-radius: 5px;
+  border: 0px solid #000000;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid var(--input-range);
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background: var(--input-range);
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: var(--input-range);
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: var(--input-range);
+  border: 0px solid #000000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid var(--input-range);
+  height: 16px;
+  width: 16px;
+  border-radius: 16px;
+  background: var(--input-range);
+  cursor: pointer;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: var(--input-range);
+}
+
+input[type="range"]:focus::-ms-fill-upper {
+  background: var(--input-range);
+}
+@media (min-width: 900px) {
+  .page {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    gap: 19.2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .weather-buttons > button {
+    width: 13.8rem;
+    height: 15.2rem;
+  }
+}
