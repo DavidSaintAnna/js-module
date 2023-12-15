@@ -24,7 +24,7 @@ Deploy do front-end efetuado no [Netlify](https://www.netlify.com/) para visuali
 
 <div align="center">
 
-Aplicação frontEnd responsiva utilizando conceitos avançados de modularização de Javascript, função recursiva e mais.
+Aplicação frontEnd responsiva utilizando conceitos avançados de modularização de Javascript em forma de Timer, função recursiva, dark mode e mais.
 
 ---
 
