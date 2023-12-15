@@ -1,4 +1,4 @@
-# text-speech-converter
+# js-module
 <p align="center">
  <a href="#eye_speech_bubble-visualizar">Visualizar</a> •
  <a href="#information_source-sobre">Sobre</a> •
