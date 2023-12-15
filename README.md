@@ -80,7 +80,7 @@ Aplicação frontEnd responsiva utilizando conceitos avançados de modularizaç�
 
 Desenvolvido com ❤️ por David Henrique Souza Santana 👋🏽 Meus Contatos!
 
-[Linkedin Badge](https://www.linkedin.com/in/david-santana-09a0a5238/)
+[Linkedin](https://www.linkedin.com/in/david-santana-09a0a5238/)
 
 </div>
 
